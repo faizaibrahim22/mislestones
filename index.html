@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> dynmaic Resume bulider</title>
+    <link rel="stylesheet" href="style.css"   href="finisher-header.es5.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+
+<body>
+  <div class="header finisher-header" style="width: 100%; height: 600px;">
+    <script src="finisher-header.es5.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        new FinisherHeader({
+          "count": 4,
+          "size": {
+            "min": 1200,
+            "max": 1500,
+            "pulse": 0.1
+          },
+          "speed": {
+            "x": {
+              "min": 0,
+              "max": 0.2
+            },
+            "y": {
+              "min": 0,
+              "max": 0.2
+            }
+          },
+          "colors": {
+            "background": "#ab51ff",
+            "particles": [
+              "#ff636b",
+              "#56ffd2",
+              "#ffc648",
+              "#462c46",
+              "#ff00ff",
+              "#d9ff00",
+              "#711c71",
+              "#ff0000",
+              "#ff00ff"
+            ]
+          },
+          "blending": "lighten",
+          "opacity": {
+            "center": 0.8,
+            "edge": 0.2
+          },
+          "skew": -2,
+          "shapes": [
+            "c",
+            "t"
+          ]
+        });
+        </script>
+              
+              <center>
+                <h1>  DYANMIC RESUME BULIDER /BY\ FAIZA IBRAHIM</h1>
+      
+                  <form id="resume-form">
+                    <i class="fa fa-user"></i>
+                    <label for="name">First Name:</label>
+                    <input type="text" id="name" name="name">
+                    <br><br>
+                <i class="fa fa-user"></i>
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" id="lastname" name="lastname">
+                    <br><br>
+                <i class="fa fa-envelope-o" ></i>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                    <br><br>
+                <i class="fa fa-phone"></i>
+                    <label for="phone">Phone:</label>
+                    <input type="number" id="phone" name="phone">
+                    <br><br>
+                 <i class="fa fa-education"></i>
+                    <label for="education">Education:</label>
+                    <input type="text" id="education" name="education">
+                    <br><br>
+                
+                    <label for="experience">Experience:</label>
+                    <input type="text" id="experience" name="experience">
+                    <br><br>
+                
+                    <label for="skills">Skills:</label>
+                    <input type="text" id="skills" name="skills">
+                    <br><br>
+                
+                    <label for="work">Work Experience:</label>
+                    <input type="text" id="work" name="work">
+                    <br><br>
+                
+                    <button type="submit">Submit</button>
+                  </form>
+                
+                  <div id="resume-display"></div>
+                
+                <script src="main.js"></script>
+              </center>
+        </body>
+ </html>
+
